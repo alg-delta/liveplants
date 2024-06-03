@@ -20,7 +20,31 @@ body {
 	font-family: Impact;
 	color:green;
 	padding-top: 170px;
+	animation: changeColor 10s;
+	animation-iteration-count: infinite;
 }
+
+@keyframes changeColor {
+	0% {
+		color: red;
+	}
+	20% {
+		color: yellow;
+	}
+	40% {
+		color: green;
+	}
+	60% {
+		color: orange;
+	}
+	80% {
+		color: blue;
+	}
+	100% {
+		color: purple;
+	}
+}
+	
 
 .menu a {
 	text-decoration: none;
@@ -58,7 +82,21 @@ body {
 	height: 400px;
 	margin-left: 300px;
 	float: left;
+animation:   move 1.2s ease-in-out;  
+animation-iteration-count: 1; 
 }
+
+@keyframes   move {
+    0% {
+        transform: translate(-500px);
+		opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+	  opacity: 1;
+    }
+}
+
 
 .header {
 	display: flex;
@@ -146,6 +184,19 @@ h4 {
 	margin-left: 300px;
 	float: left;
 	margin-top: -45px;
+	animation:   move 1.2s ease-in-out;  
+animation-iteration-count: 1; 
+}
+
+@keyframes   move {
+    0% {
+        transform: translate(-500px);
+		opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+	  opacity: 1;
+    }
 }
 
 .textt {
